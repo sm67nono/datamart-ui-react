@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/datamart-ui-react/static/css/main.c0632363.chunk.css",
+    "main.js": "/datamart-ui-react/static/js/main.96f8780b.chunk.js",
+    "main.js.map": "/datamart-ui-react/static/js/main.96f8780b.chunk.js.map",
+    "runtime-main.js": "/datamart-ui-react/static/js/runtime-main.73c45287.js",
+    "runtime-main.js.map": "/datamart-ui-react/static/js/runtime-main.73c45287.js.map",
+    "static/js/2.4e1f3783.chunk.js": "/datamart-ui-react/static/js/2.4e1f3783.chunk.js",
+    "static/js/2.4e1f3783.chunk.js.map": "/datamart-ui-react/static/js/2.4e1f3783.chunk.js.map",
+    "index.html": "/datamart-ui-react/index.html",
+    "precache-manifest.a38dd99c29fd205cc4d7e90602086eb2.js": "/datamart-ui-react/precache-manifest.a38dd99c29fd205cc4d7e90602086eb2.js",
+    "service-worker.js": "/datamart-ui-react/service-worker.js",
+    "static/css/main.c0632363.chunk.css.map": "/datamart-ui-react/static/css/main.c0632363.chunk.css.map",
+    "static/js/2.4e1f3783.chunk.js.LICENSE.txt": "/datamart-ui-react/static/js/2.4e1f3783.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73c45287.js",
+    "static/js/2.4e1f3783.chunk.js",
+    "static/css/main.c0632363.chunk.css",
+    "static/js/main.96f8780b.chunk.js"
+  ]
+}
