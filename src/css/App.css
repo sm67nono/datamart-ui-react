@@ -1,0 +1,113 @@
+
+html, body {
+  margin: 0;
+}
+
+.derived
+{
+width:40;
+height:30;
+}
+
+.dependent{
+  width:40;
+  height:30;
+}
+
+/* Flow Generation CSS */
+
+/* .treeView{
+ margin-top: 50%;
+} */
+.tree {
+  list-style: none;
+}
+.tree, .tree * {
+  margin: 0;
+  padding: 0;
+}
+.tree li {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+  position: relative;
+  padding-left: 2vw;
+}
+.tree li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-top: 1px solid;
+  width: 2vw;
+}
+/*Issue with the following rendering extra connector for single child */
+
+
+
+.tree .multipleChild > li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  border-left: 1px solid;
+}
+
+.tree .singleChild > li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  border-left: 0px solid;
+}
+
+
+
+.tree li:last-of-type::after {
+  height: 50%;
+  top: 0;
+}
+.tree li:first-of-type::after {
+  height: 50%;
+  bottom: 0;
+}
+.tree li:not(:first-of-type):not(:last-of-type)::after {
+  height: 100%;
+}
+.tree ul, .tree ol {
+  padding-left: 2vw;
+  position: relative;
+}
+.tree ul::before, .tree ol::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-top: 1px solid;
+  width: 2vw;
+}
+.tree span {
+  border: 1px solid;
+  text-align: center;
+  padding: 0.33em 0.66em;
+}
+.tree > li {
+  padding-left: 0;
+}
+.tree > li::before, .tree > li::after {
+  display: none;
+}
+
+ol, ul {
+  counter-reset: section;
+}
+
+/*li span::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+  font-family: monospace;
+}*/
